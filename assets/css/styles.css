@@ -73,6 +73,21 @@ button {
     line-height: 1.26316;
 }
 
+.break-all {
+    word-break: break-all;
+}
+
+.line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 1);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.line-clamp.line-2 {
+    --line-clamp: 2;
+}
+
 /* Header */
 .header {
     background: #FFFCF4;
@@ -325,7 +340,7 @@ button {
     background: #FFF;
 }
 
-.popular-course .course-item:hover{
+.popular-course .course-item:hover {
     border: none;
     box-shadow: 0px 18px 36px 0px rgba(0, 0, 0, 0.05);
 }
@@ -353,6 +368,7 @@ button {
 
 
 .popular-course .infor-head a {
+    padding-right: 6px;
     color: #171100;
     font-size: 1.8rem;
     font-weight: 600;
