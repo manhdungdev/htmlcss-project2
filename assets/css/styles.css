@@ -74,7 +74,7 @@ button {
 }
 
 .break-all {
-    word-break: break-all;
+    word-break: break-word;
 }
 
 .line-clamp {
@@ -334,6 +334,8 @@ button {
 }
 
 .popular-course .course-item {
+    display: flex;
+    flex-direction: column;
     flex: 1;
     border-radius: 12px;
     border: var(--border-thumb) solid #E2DFDA;
@@ -354,6 +356,9 @@ button {
 }
 
 .popular-course .infor {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
     padding: 22px;
     padding-top: 16px;
 }
@@ -391,7 +396,7 @@ button {
 }
 
 .popular-course .infor-foot {
-    margin-top: 12px;
+    margin-top: auto;
 }
 
 .popular-course .infor-foot .btn-book {
@@ -414,4 +419,72 @@ button {
     font-size: 1.8rem;
     font-weight: 600;
     line-height: 1.66667;
+}
+
+/* Make Feedback */
+.feedback {
+    margin-top: 135px;
+    padding: 96px 0;
+    background: #2E2100;
+}
+
+.feedback-item {
+    display: flex;
+}
+
+.feedback-infor .avatar {
+    flex: 1 0 34%;
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.feedback-infor .author {
+    margin-top: 18px;
+    color: #F7F7F7;
+    font-family: Sen;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 1.41667;
+}
+
+.feedback-infor .desc {
+    color: #BFBCB2;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.85714;
+}
+
+.feedback-item .dots {
+    display: flex;
+    gap: 6px;
+    margin-top: 28px;
+}
+
+.feedback-item .dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #634700;
+    cursor: pointer;
+}
+
+.feedback-item .dot.active {
+    background: var(--primary-color);
+    cursor: default;
+}
+
+.feedback-item .content {
+    flex: 0 0 66%;
+    margin-left: auto;
+}
+
+.feedback-item .content .quote{
+    margin-left: 30px;
+    color: #FFF;
+    font-size: 2.6rem;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 1.53846;
 }
