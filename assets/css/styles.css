@@ -5,11 +5,13 @@
 
 html {
     font-size: 62.5%;
+    text-rendering: optimizeSpeed;
 }
 
 body {
     font-size: 1.6rem;
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
 
 :root {
@@ -428,8 +430,14 @@ button {
     background: #2E2100;
 }
 
+.feedback-list{
+    display: flex;
+    overflow: hidden;
+}
+
 .feedback-item {
     display: flex;
+    flex: 1 0 100%;
 }
 
 .feedback-infor .avatar {
