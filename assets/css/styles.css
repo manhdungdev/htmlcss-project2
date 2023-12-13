@@ -27,10 +27,6 @@ button {
     font-family: inherit;
 }
 
-.app {
-    height: 5000px;
-}
-
 .main-content {
     width: 1170px;
     max-width: calc(100% - 48px);
@@ -56,6 +52,7 @@ button {
     color: #FFF;
     font-weight: 600;
     text-align: center;
+    opacity: 0.9;
 }
 
 .heading {
@@ -589,7 +586,7 @@ button {
     display: flex;
     gap: 30px;
     margin-top: 55px;
-    /* overflow-x: hidden; */
+    overflow-x: clip;
 }
 
 .blog-list .blog-item {
@@ -599,8 +596,8 @@ button {
     border-radius: 16px;
 }
 
-.blog-list .blog-item:hover{
-    box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.4);
+.blog-list .blog-item:hover {
+    box-shadow: 0 0 32px 0px rgba(0, 0, 0, 0.1);
 
 }
 
@@ -615,7 +612,7 @@ button {
     padding: 20px 30px 28px;
 }
 
-.blog-item .content .date{
+.blog-item .content .date {
     position: relative;
     display: inline-block;
     margin-left: 12px;
@@ -651,7 +648,7 @@ button {
     background: #E2DFDA;
 }
 
-.blog-item .content .desc a{
+.blog-item .content .desc a {
     margin-top: 25px;
     color: #171100;
     font-weight: 600;
@@ -672,14 +669,14 @@ button {
     cursor: pointer;
 }
 
-.blog .dots{
+.blog .dots {
     display: flex;
     justify-content: center;
     gap: 6px;
     margin-top: 38px;
 }
 
-.blog .dots .dot{
+.blog .dots .dot {
     width: 6px;
     height: 6px;
     border-radius: 50%;
@@ -687,9 +684,79 @@ button {
     cursor: pointer;
 }
 
-.blog .dot.active{
+.blog .dot.active {
     background: var(--primary-color);
     cursor: default;
 }
 
+/* Footer */
+.footer {
+    background: #2E2100;
+    padding: 96px 0 28px;
+}
 
+.footer .row {
+    display: flex;
+    border-bottom: 1px solid #59554B;
+    padding-bottom: 38px;
+}
+
+.footer .column {
+    width: 21.66%;
+}
+
+.footer .column:nth-child(1) {
+    width: 35%;
+    margin-top: 6px;
+}
+
+.footer .desc {
+    max-width: 267px;
+    margin-top: 18px;
+    color: #BFBCB2;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.85714;
+}
+
+.footer .socials {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-top: 18px;
+}
+
+.footer .heading {
+    display: inline-block;
+    padding: 0 48px 14px 0;
+    border-bottom: 1px solid #59554B;
+    color: #FFF;
+    font-weight: 600;
+    line-height: 1.75;
+}
+
+.footer .list a {
+
+    display: inline-block;
+    margin-bottom: 0 0 12px 0;
+}
+
+.footer .list a:hover {
+    text-decoration: underline 1px #fff;
+}
+
+.footer .list strong {
+    color: #FFF;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.85714;
+}
+
+.copy-right {
+    padding-top: 28px;
+    color: #807D74;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.85714;
+}
