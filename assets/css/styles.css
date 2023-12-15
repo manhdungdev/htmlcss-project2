@@ -586,7 +586,7 @@ button {
     display: flex;
     gap: 30px;
     margin-top: 55px;
-    overflow-x: clip;
+    overflow: clip;
     overflow-clip-margin: 20px;
 }
 
